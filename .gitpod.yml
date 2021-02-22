@@ -12,4 +12,5 @@ ports:
     onOpen: ignore
 vscode:
   extensions:
-    - svelte.svelte-vscode@102.1.0:lalX6WJBrpvP8QKZTiLUmQ==
+    - svelte.svelte-vscode
+    - https://open-vsx.org/api/dbaeumer/vscode-eslint/2.1.8/file/dbaeumer.vscode-eslint-2.1.8.vsix
