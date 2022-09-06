@@ -12,7 +12,7 @@
 		{#if cmp}
 		<Comp1 text='Первый'/>
 		{:else}
-		<Comp1 text='Второй'/>
+		<Comp2 text='Второй'/>
 		{/if}
 		
 	</div>

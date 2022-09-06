@@ -3,5 +3,11 @@
 </script>
 
 <div>
-    {text}
+    {text} компонент
 </div>
+
+<style>
+    div{
+        color:red;
+    }
+</style>
