@@ -1,30 +1,29 @@
 <script>
-	export let name;
+	import Comp1 from './Comps/comp1.svelte'
+	import Comp2 from './Comps/comp2.svelte'
+	let cmp =true;
 </script>
 
-<main>
-	<h1>Hello {name}!!!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<div class="main">
+	<div>
+		<button on:click={()=>cmp=!cmp}>Переключатель</button>
+	</div>
+	<div>
+		{#if cmp}
+		<Comp1 text='Первый'/>
+		{:else}
+		<Comp1 text='Второй'/>
+		{/if}
+		
+	</div>
+</div>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	.main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height:100%;
 	}
 </style>
