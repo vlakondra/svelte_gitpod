@@ -3,12 +3,14 @@
     export let cnt;
 </script>
 
-<div>
+<div class="comp-two">
    <span> {text} компонент</span>
    <span>{cnt}</span>
 </div>
+
 <style>
-    div{
+    .comp-two{
+        border: 3px solid yellow;
         color:blue;
     }
 </style>

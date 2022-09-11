@@ -14,6 +14,7 @@
 
 <div class="main">
 	<div>
+		
 		<button on:click={toggle}>Переключатель</button>
 	</div>
 	<div>
@@ -32,5 +33,6 @@
 		align-items: center;
 		justify-content: center;
 		min-height: 100%;
+		border: 2px solid blue;
 	}
 </style>

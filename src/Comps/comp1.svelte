@@ -3,7 +3,8 @@
     export let funccount;
 </script>
 
-<div>
+
+<div class="comp-one">
     {text} компонент
     <div>
         <button on:click={funccount}>counter</button>
@@ -11,7 +12,8 @@
 </div>
 
 <style>
-    div{
+    .comp-one{
+        border: 1px solid green;
         color:red;
     }
 </style>
